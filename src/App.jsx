@@ -33,6 +33,7 @@ function App() {
   const SKILLS = [
     { cat: "Frontend",  items: ["React", "Vue", "JavaScript", "HTML5", "CSS3", "Bootstrap", "jQuery"] },
     { cat: "Backend",   items: ["Node.js", "PHP", "Laravel", "Spring", "Python", "Java"] },
+    { cat: "Database",   items: ["MySQL", "PL/SQL", "PostgreSQL", "SQLite"] },
     { cat: "Mobile",    items: ["Flutter", "Dart", "Android Studio"] },
     { cat: "CMS",       items: ["WordPress", "Joomla"] },
     { cat: "Tools",     items: ["Git", "Jira", "Agile", "C/C++"] },
