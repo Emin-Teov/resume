@@ -37,18 +37,18 @@
       "type":    "work"
     },
     {
-      "period":  "Sep 2017 — Jun 2019",
-      "role":    "Master's Degree — Biomedical Technology Engineering",
-      "company": "Azerbaijan State Oil & Industry University",
-      "detail":  "Graduated with Honours. Faculty of Information Technology and Management.",
-      "type":    "edu"
-    },
-    {
       "period":  "Jun 2019 — Sep 2019",
       "role":    "IT Intern",
       "company": "Central Bank of the Republic of Azerbaijan",
       "detail":  "Rotated through the IT department, building internal tooling and gaining production exposure in a regulated financial environment.",
       "type":    "work"
+    },
+    {
+      "period":  "Sep 2017 — Jun 2019",
+      "role":    "Master's Degree — Biomedical Technology Engineering",
+      "company": "Azerbaijan State Oil & Industry University",
+      "detail":  "Graduated with Honours. Faculty of Information Technology and Management.",
+      "type":    "edu"
     },
     {
       "period":  "Sep 2013 — Jul 2017",
