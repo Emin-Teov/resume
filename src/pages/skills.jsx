@@ -9,10 +9,10 @@ function Skills(props) {
         <section id="skills" style={{ padding: "100px 5vw" }}>
             <Reveal>
                 <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "#2D7EFF", letterSpacing: 2, textTransform: "uppercase", marginBottom: 12 }}>
-                Technical skills
+                {t('technical_skills')}
                 </p>
                 <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(28px, 4vw, 46px)", fontWeight: 700, color: "#fff", margin: "0 0 56px", letterSpacing: "-0.5px" }}>
-                What I build with
+                {t('build_with')}
                 </h2>
             </Reveal>
             <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>

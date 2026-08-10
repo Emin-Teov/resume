@@ -1,172 +1,69 @@
 {
-  "title": "Emin Təvəkkülov",
+  "nav": {
+    "skills": "Bacarıqlar", "experience": "Təcrübə", "projects": "Layihələr", "contact": "Əlaqə"
+  },
+
+  "full_name": "Emin Təvəkkülov",
+  "name": "Emin",
+  "surname": "Təvəkkülov",
+  "location": "Bakı, Azərbaycan",
   "research": "PhD @ ADNSU — İnformasiya ölçmə sistemləri",
   "opportunities": "Təkliflərə açıq →",
 
-  "tabs": {
-    "skills": "Biliklər",
-    "experience": "Təcrübə",
-    "projects": "Layihələr",
-    "contact": "Əlaqə"
-  },
-  "hero": {
-    "badge": "Plastik Pəncərə İstehsalçısı",
-    "title": "Mükəmməl",
-    "titleAccent": "Pəncərələr",
-    "sub": "Bakının ən etibarlı plastik pəncərə sexindən keyfiyyətli, uzunömürlü həllər. Hər ölçü, hər rəng, hər büdcə.",
-    "cta": "Konfiqurator",
-    "ctaSub": "Bizimlə Əlaqə",
-    "stats": [
-      {
-        "val": "15+",
-        "label": "İl Təcrübə"
-      },
-      {
-        "val": "8000+",
-        "label": "Layihə"
-      },
-      {
-        "val": "100%",
-        "label": "Zəmanət"
-      },
-      {
-        "val": "24/7",
-        "label": "Dəstək"
-      }
-    ]
-  },
-  "about": {
-    "title": "Biz Kimik?",
-    "sub": "Peşəkar plastik pəncərə istehsalı",
-    "p1": "2009-cu ildən fəaliyyət göstərən şirkət, Azərbaycanın aparıcı plastik pəncərə istehsalçısıdır. Müasir texnologiya və yüksək keyfiyyətli materiallardan istifadə edərək hər müştərinin xüsusi tələbatını qarşılayırıq.",
-    "p2": "Alman profil sistemləri, İtalyan aksessuarları və yerli istehsal güvəncimizlə 15 ildir etibarlı xidmət göstəririk.",
-    "properties": [
-      {
-        "icon": "🔨",
-        "title": "Alman Profilləri"
-      },
-      {
-        "icon": "🧰",
-        "title": "İtalyan Avadanlığı"
-      },
-      {
-        "icon": "🔩",
-        "title": "Yerli Ekspertiza"
-      }
-    ],
-    "advantages": [
-      {
-        "icon": "🏭",
-        "title": "Öz İstehsal",
-        "desc": "Bakıdakı zavodumuzda birbaşa istehsal — vasitəçisiz qiymət."
-      },
-      {
-        "icon": "🔧",
-        "title": "Peşəkar Quraşdırma",
-        "desc": "Sertifikatlı ustalar tərəfindən quraşdırma."
-      },
-      {
-        "icon": "📐",
-        "title": "Fərdi Ölçü",
-        "desc": "İstənilən forma və ölçüdə istehsal."
-      },
-      {
-        "icon": "🛡️",
-        "title": "5 İl Zəmanət",
-        "desc": "Bütün məhsullara 5 illik rəsmi zəmanət."
-      },
-      {
-        "icon": "🌡️",
-        "title": "Enerji Qənaəti",
-        "desc": "A+ enerji sinifli profillər — istilik itkisi minimumdur."
-      },
-      {
-        "icon": "🚚",
-        "title": "Pulsuz Çatdırılma",
-        "desc": "Bakı daxilində pulsuz çatdırılma və ölçü."
-      }
-    ]
-  },
-  "config": {
-    "title": "Pəncərə Konfiquratoru",
-    "sub": "Öz pəncərənizi dizayn edin və ani qiyməti görün",
-    "width": "En (sm)",
-    "height": "Hündürlük (sm)",
-    "hSections": "Üfüqi bölmə (sütun)",
-    "vSections": "Şaquli bölmə (sıra)",
-    "windowType": "Pəncərə Növü",
-    "column": "sütun",
-    "row": "sıra",
-    "sections": "bölmə",
-    "measurement": "sm",
-    "sectionLabels": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "color": "Rəng seçin",
-    "frameSurcharge": "Çərçivə stili üçün ödəniş",
-    "frameStyle": "Çərçivə stili",
-    "frameStyleHint": "Dəyişdirmək üçün xanaya klikləyin",
-    "colors": {
-      "white": {
-        "name": "Klassik Ağ",
-        "desc": "Standart, ən çox seçilən",
-        "badge": null
-      },
-      "gray": {
-        "name": "Antrasit Boz",
-        "desc": "Müasir, populyar",
-        "badge": null
-      }
+  "technical_skills": "Texniki bacarıqlar",
+  "build_with": "İstifadə etdiyim alətlər",
+
+  "experience_education": "Təcrübə və təhsil",
+  "experience": [
+    {
+      "period":  "Okt 2025 — Davam edir",
+      "role":    "Doktorant Dərəcəsi",
+      "company": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
+      "detail":  "İnformasiya Ölçmə və İdarəetmə Sistemləri. İnformasiya Texnologiyaları və İdarəetmə Fakültəsi.",
+      "type":    "edu"
     },
-    "additional_colors": {
-      "darkGray": {
-        "name": "Tünd Antrasit",
-        "desc": "Daha dərin tünd ton",
-        "badge": null
-      },
-      "beige": {
-        "name": "Krem / Bej",
-        "desc": "İsti, klassik ton",
-        "badge": null
-      },
-      "woodOak": {
-        "name": "Palıd Ağacı",
-        "desc": "Təbii ağac görünüşü",
-        "badge": "PREMİUM"
-      },
-      "woodWalnut": {
-        "name": "Qoz Ağacı",
-        "desc": "Lüks tünd ağac effekti",
-        "badge": "PREMİUM"
-      }
+    {
+      "period":  "Davam edir",
+      "role":    "Freelance Full-Stack Developer",
+      "company": "Müstəqil",
+      "detail":  "Müxtəlif müəssisələr üçün React, Vue, Node.js, Flutter, WordPress və Laravel layihələrin hazırlanması.",
+      "type":    "work"
     },
-    "summary": "Qiymət Hesablaması",
-    "basePrice": "Əsas qiymət",
-    "colorSurcharge": "Rəng əlavəsi",
-    "sectionSurcharge": "Bölmə əlavəsi",
-    "total": "CƏMİ",
-    "currency": "AZN",
-    "note": "* Qiymət təxminidir. Dəqiq qiymət ölçüdən sonra müəyyənləşir.",
-    "download": "Yükləyin",
-    "getQuote": "Sifariş Ver",
-    "preview": "Pəncərə Önizləməsi",
-    "shapedPane": "Şüşə"
-  },
-  "footer": {
-    "tagline": "Keyfiyyətin adresi",
-    "address": "Ünvan",
-    "addressVal": "Bakı",
-    "phone": "Telefon",
-    "email": "Elektron Poçt",
-    "hours": "İş saatları",
-    "hoursVal": "B.e – Cümə: 09:00–18:00",
-    "hoursEnd": "Şənbə: 09:00–15:00",
-    "social": "Sosial şəbəkələr",
-    "rights": "Bütün hüquqlar qorunur."
-  }
+    {
+      "period":  "Apr 2021 — Sen 2022",
+      "role":    "Back-End Developer",
+      "company": "FANFI LLC — Bakı, Azərbaycan",
+      "detail":  "Xüsusi PHP/Java/Python modulları ilə CMS əsaslı backend sistemləri (Joomla, WordPress) qurulmuş və inkişaf etdirilmişdir. Jira vasitəsilə izlənilən Agile sprintlərində xüsusiyyətlər təqdim edilmişdir.",
+      "type":    "work"
+    },
+    {
+      "period":  "İyn 2019 — Sen 2019",
+      "role":    "IT Intern",
+      "company": "Azərbaycan Respublikası Mərkəzi Bankı",
+      "detail":  "IT departamentində, Ödəniş sistemləri və Maliyə sahələri üzrə texniki və proqramlaşdırma təcrübəsi qazanmışam.",
+      "type":    "work"
+    },
+    {
+      "period":  "Sen 2017 — İyn 2019",
+      "role":    "Magistr Dərəcəsi — Biotibbi Texnika Mühəndisliyi",
+      "company": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
+      "detail":  "Fərqlənmə diplomu ilə məzun. İnformasiya Texnologiyaları və İdarəetmə Fakültəsi.",
+      "type":    "edu"
+    },
+    {
+      "period":  "Sen 2013 — Jul 2017",
+      "role":    "Bakalavr Dərəcəsi — Biotibbi Texnologiyalar Mühəndisliyi",
+      "company": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
+      "detail":  "İnformasiya Texnologiyaları və İdarəetmə Fakültəsi.",
+      "type":    "edu"
+    }
+  ],
+
+  "talk": "Gəlin danışaq",
+  "right_role": "Doğru rollara açıq",
+  "offer": "Full-stack, backend və ya mobil — remote və ya local. Əgər iş maraqlıdırsa, gəlin uyğun olub-olmadığımızı görək.",
+  "label_location": "Ünvan",
+  "label_languages": "Dillər",
+  "label_status": "Status"
+
 }

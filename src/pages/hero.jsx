@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 function Hero(props){
+    const { t, i18n } = useTranslation();
+
     // ── Terminal typewriter hook ─────────────────────────────────────
     function useTypewriter(lines, speed = 38, pauseBetween = 600) {
       const [displayed, setDisplayed] = useState([]);
@@ -73,7 +77,7 @@ function Hero(props){
                     fontSize: 13, color: "#2D7EFF", letterSpacing: 2,
                     marginBottom: 20, textTransform: "uppercase",
                     }}>
-                    Available for opportunities
+                        {t('opportunities')}
                     </p>
 
                     <h1 style={{
@@ -83,8 +87,8 @@ function Hero(props){
                     margin: "0 0 12px",
                     letterSpacing: "-1.5px",
                     }}>
-                    Emin<br />
-                    <span style={{ color: "#2D7EFF" }}>Tavakkulov</span>
+                    {t('name')}<br />
+                    <span style={{ color: "#2D7EFF" }}>{t('surname')}</span>
                     </h1>
 
                     <p style={{
@@ -93,7 +97,7 @@ function Hero(props){
                     color: "#8B9AB5", fontWeight: 400,
                     margin: "0 0 48px",
                     }}>
-                    Full-Stack Developer · Baku, Azerbaijan
+                        Full-Stack Developer · {t('location')}
                     </p>
 
                     {/* terminal block — the signature element */}

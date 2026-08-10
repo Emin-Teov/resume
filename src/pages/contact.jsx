@@ -13,7 +13,7 @@ function Contact(props) {
         }}>
         <Reveal>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "#2D7EFF", letterSpacing: 2, textTransform: "uppercase", marginBottom: 12 }}>
-            Let's talk
+                {t('talk')}
             </p>
             <h2 style={{
             fontFamily: "'Space Grotesk', sans-serif",
@@ -22,14 +22,14 @@ function Contact(props) {
             margin: "0 0 16px", letterSpacing: "-1px",
             maxWidth: 600,
             }}>
-            Open to the right role
+                {t('right_role')}
             </h2>
             <p style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: 17, color: "#8B9AB5", lineHeight: 1.7,
             margin: "0 0 48px", maxWidth: 480,
             }}>
-            Full-stack, backend, or mobile — remote or Baku-based. If the work is interesting, let's find out if we're a fit.
+                {t('offer')}
             </p>
 
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center", marginBottom: 64 }}>
@@ -64,9 +64,9 @@ function Contact(props) {
 
             <div style={{ display: "flex", gap: 40, justifyContent: "center", flexWrap: "wrap" }}>
             {[
-                { label: "Location", value: "Baku, Azerbaijan" },
-                { label: "Languages", value: "AZ · EN · RU" },
-                { label: "Status", value: "PhD Researcher & Open to work" },
+                { label: t('label_location'), value: t('location') },
+                { label: t('label_languages'), value: "AZ · EN · RU" },
+                { label: t('label_status'), value: t('research') },
             ].map(({ label, value }) => (
                 <div key={label}>
                 <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#4A5568", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>{label}</p>
@@ -78,7 +78,7 @@ function Contact(props) {
 
         <div style={{ marginTop: 80, paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.06)", width: "100%", maxWidth: 600 }}>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#2A3448", margin: 0 }}>
-            © 2026 Emin Tavakkulov — built with React
+            © 2026 {t('full_name')}
             </p>
         </div>
         </section>

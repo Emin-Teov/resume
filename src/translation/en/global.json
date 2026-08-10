@@ -1,172 +1,68 @@
 {
-  "title": "Emin Tavakkulov",
+  "nav": {
+    "skills": "Skills", "experience": "Experience", "projects": "Projects", "contact": "Contact"
+  },
+
+  "full_name": "Emin Tavakkulov",
+  "name": "Emin",
+  "surname": "Tavakkulov",
+  "location": "Baku, Azerbaijan",
   "research": "PhD @ ASOIU — Information measurement systems",
   "opportunities": "Open to opportunities →",
 
-  "tabs": {
-    "skills": "Skills",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "hero": {
-    "badge": "Plastic Window Manufacturer",
-    "title": "Premium",
-    "titleAccent": "Windows",
-    "sub": "Quality, long-lasting plastic window solutions from Baku's most trusted manufacturer. Any size, any colour, any budget.",
-    "cta": "Configure Now",
-    "ctaSub": "Contact Us",
-    "stats": [
-      {
-        "val": "15+",
-        "label": "Years Experience"
-      },
-      {
-        "val": "8000+",
-        "label": "Projects"
-      },
-      {
-        "val": "100%",
-        "label": "Guaranteed"
-      },
-      {
-        "val": "24/7",
-        "label": "Support"
-      }
-    ]
-  },
-  "about": {
-    "title": "Who Are We?",
-    "sub": "Professional plastic window manufacturing",
-    "p1": "Operating since 2009, GlassWin is Azerbaijan's leading plastic window manufacturer. Using modern technology and high-quality materials, we meet the specific needs of every customer.",
-    "p2": "With German profile systems, Italian accessories and local manufacturing, we have delivered reliable service for 15 years.",
-    "properties": [
-      {
-        "icon": "🔨",
-        "title": "German Profiles"
-      },
-      {
-        "icon": "🧰",
-        "title": "Italian Hardware"
-      },
-      {
-        "icon": "🔩",
-        "title": "Local Expertise"
-      }
-    ],
-    "advantages": [
-      {
-        "icon": "🏭",
-        "title": "Own Factory",
-        "desc": "Direct production at our Baku factory — no middleman pricing."
-      },
-      {
-        "icon": "🔧",
-        "title": "Pro Installation",
-        "desc": "Installation by certified specialists."
-      },
-      {
-        "icon": "📐",
-        "title": "Custom Sizing",
-        "desc": "Any shape and size manufactured to order."
-      },
-      {
-        "icon": "🛡️",
-        "title": "5-Year Warranty",
-        "desc": "Official 5-year warranty on all products."
-      },
-      {
-        "icon": "🌡️",
-        "title": "Energy Saving",
-        "desc": "A+ energy class profiles — minimum heat loss."
-      },
-      {
-        "icon": "🚚",
-        "title": "Free Delivery",
-        "desc": "Free delivery and measurement within Baku."
-      }
-    ]
-  },
-  "config": {
-    "title": "Window Configurator",
-    "sub": "Design your window and see the price instantly",
-    "width": "Width (cm)",
-    "height": "Height (cm)",
-    "hSections": "Horizontal sections (columns)",
-    "vSections": "Vertical sections (rows)",
-    "windowType": "Window Type",
-    "column": "column",
-    "row": "row",
-    "sections": "sections",
-    "measurement": "cm",
-    "sectionLabels": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "color": "Choose colour",
-    "frameSurcharge": "Payment for frame style",
-    "frameStyle": "Window Frame Style",
-    "frameStyleHint": "Click a cell to change",
-    "colors": {
-      "white": {
-        "name": "Classic White",
-        "desc": "Standard, most popular",
-        "badge": null
-      },
-      "gray": {
-        "name": "Anthracite Gray",
-        "desc": "Modern, popular choice",
-        "badge": null
-      }
+  "technical_skills": "Technical skills",
+  "build_with": "What I build with",
+
+  "experience_education": "Experience & education",
+  "experience": [
+    {
+      "period":  "Oct 2025 — Present",
+      "role":    "PhD Researcher",
+      "company": "Azerbaijan State Oil & Industry University",
+      "detail":  "Information-Measurement & Management Systems. Faculty of Information Technology and Management.",
+      "type":    "edu"
     },
-    "additional_colors": {
-      "darkGray": {
-        "name": "Dark Anthracite",
-        "desc": "Deeper dark tone",
-        "badge": "NEW"
-      },
-      "beige": {
-        "name": "Cream / Beige",
-        "desc": "Warm, classic tone",
-        "badge": null
-      },
-      "woodOak": {
-        "name": "Oak Wood",
-        "desc": "Natural wood appearance",
-        "badge": "PREMIUM"
-      },
-      "woodWalnut": {
-        "name": "Walnut Wood",
-        "desc": "Luxury dark wood effect",
-        "badge": "PREMIUM"
-      }
+    {
+      "period":  "Ongoing",
+      "role":    "Freelance Full-Stack Developer",
+      "company": "Independent",
+      "detail":  "End-to-end delivery across React, Vue, Node.js, Flutter, WordPress and Laravel projects for clients across varied industries.",
+      "type":    "work"
     },
-    "summary": "Price Calculation",
-    "basePrice": "Base price",
-    "colorSurcharge": "Colour surcharge",
-    "sectionSurcharge": "Section surcharge",
-    "total": "TOTAL",
-    "currency": "AZN",
-    "note": "* Price is an estimate. Exact price determined after measurement.",
-    "download": "Download",
-    "getQuote": "Place Order",
-    "preview": "Window Preview",
-    "shapedPane": "Pane"
-  },
-  "footer": {
-    "tagline": "The address of quality",
-    "address": "Address",
-    "addressVal": "Baku",
-    "phone": "Phone",
-    "email": "Email",
-    "hours": "Working hours",
-    "hoursVal": "Mon – Fri: 09:00–18:00",
-    "hoursEnd": "Saturday: 09:00–15:00",
-    "social": "Social media",
-    "rights": "All rights reserved."
-  }
+    {
+      "period":  "Apr 2021 — Sep 2022",
+      "role":    "Back-End Developer",
+      "company": "FANFI LLC — Baku, Azerbaijan",
+      "detail":  "Built and maintained CMS-based backend systems (Joomla, WordPress) with custom PHP/Java/Python modules. Delivered features in Agile sprints tracked via Jira.",
+      "type":    "work"
+    },
+    {
+      "period":  "Sep 2017 — Jun 2019",
+      "role":    "Master's Degree — Biomedical Technology Engineering",
+      "company": "Azerbaijan State Oil & Industry University",
+      "detail":  "Graduated with Honours. Faculty of Information Technology and Management.",
+      "type":    "edu"
+    },
+    {
+      "period":  "Jun 2019 — Sep 2019",
+      "role":    "IT Intern",
+      "company": "Central Bank of the Republic of Azerbaijan",
+      "detail":  "Rotated through the IT department, building internal tooling and gaining production exposure in a regulated financial environment.",
+      "type":    "work"
+    },
+    {
+      "period":  "Sep 2013 — Jul 2017",
+      "role":    "Bachelor's Degree — Biomedical Technology Engineering",
+      "company": "Azerbaijan State Oil & Industry University",
+      "detail":  "Faculty of Information Technology and Management.",
+      "type":    "edu"
+    }
+  ],
+
+  "talk": "Let's talk",
+  "right_role": "Open to the right role",
+  "offer": "Full-stack, backend, or mobile — remote or Baku-based. If the work is interesting, let's find out if we're a fit.",
+  "label_location": "Location",
+  "label_languages": "Languages",
+  "label_status": "Status"
 }

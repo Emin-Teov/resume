@@ -1,6 +1,6 @@
 import logo from '../assets/logo.svg';
 
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 import React, {useState, useEffect} from 'react';
 
 function Nav(props){
@@ -26,7 +26,7 @@ function Nav(props){
                     background: scrolled ? "rgba(10,15,30,0.92)" : "transparent",
                     backdropFilter: scrolled ? "blur(12px)" : "none",
                     borderBottom: scrolled ? "1px solid rgba(45,126,255,0.12)" : "none",
-                transition: "all 0.3s ease",
+                    transition: "all 0.3s ease",
                 }}>
                     <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 15, color: "#2D7EFF", letterSpacing: 1 }}>
                         ET<span style={{ color: "#fff" }}>.</span>dev
@@ -38,10 +38,22 @@ function Nav(props){
                             onMouseOver={e => e.target.style.color = "#fff"}
                             onMouseOut={e => e.target.style.color = "#8B9AB5"}
                         >
-                            {s}
+                            {t(`nav.${s}`)}
                         </button>
                         ))}
                     </div>
+
+                    <button style={{ background: "none", border: "none", cursor: "pointer", color: "#2D7EFF", fontSize: 8, fontFamily: "'Inter', sans-serif", letterSpacing: 0.5, textTransform: "uppercase", transition: "color 0.2s" }}
+                        onMouseOver={e => e.target.style.color = "#fff"}
+                        onMouseOut={e => e.target.style.color = "#2D7EFF"}
+                        onClick={() => {
+                                i18n.changeLanguage(props.lang)
+                                props.setLang(props.lang)
+                            }
+                        }
+                    >
+                        {props.lang}
+                    </button>
                 </nav>
             </header>
         </>
