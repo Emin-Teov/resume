@@ -1,63 +1,43 @@
-import logo from '../assets/logo.svg';
-
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import React, {useState, useEffect} from 'react';
+import { scrollTo } from '../utils';
 
-function Nav(props){
-    const { t, i18n } = useTranslation();
+function Nav({ TABS }) {
+  const { t, i18n } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
 
-    const [scrolled, setScrolled] = useState(false);
-    useEffect(() => {
-    const h = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", h);
-    return () => window.removeEventListener("scroll", h);
-    }, []);
-    const go = id => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-    return(
-        <>
-            <header>
-                {/* NAV */}
-                <nav style={{
-                    position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
-                    padding: "0 5vw",
-                    height: 64,
-                    display: "flex", alignItems: "center", justifyContent: "space-between",
-                    background: scrolled ? "rgba(10,15,30,0.92)" : "transparent",
-                    backdropFilter: scrolled ? "blur(12px)" : "none",
-                    borderBottom: scrolled ? "1px solid rgba(45,126,255,0.12)" : "none",
-                    transition: "all 0.3s ease",
-                }}>
-                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 15, color: "#2D7EFF", letterSpacing: 1 }}>
-                        ET<span style={{ color: "#fff" }}>.</span>dev
-                    </span>
-                    <div style={{ display: "flex", gap: 32 }}>
-                        {props.TABS.map(s => (
-                        <button key={s} onClick={() => go(s)}
-                            style={{ background: "none", border: "none", cursor: "pointer", color: "#8B9AB5", fontSize: 13, fontFamily: "'Inter', sans-serif", letterSpacing: 0.5, textTransform: "uppercase", transition: "color 0.2s" }}
-                            onMouseOver={e => e.target.style.color = "#fff"}
-                            onMouseOut={e => e.target.style.color = "#8B9AB5"}
-                        >
-                            {t(`nav.${s}`)}
-                        </button>
-                        ))}
-                    </div>
+  const nextLang = i18n.language === "en" ? "az" : "en";
 
-                    <button style={{ background: "none", border: "none", cursor: "pointer", color: "#2D7EFF", fontSize: 8, fontFamily: "'Inter', sans-serif", letterSpacing: 0.5, textTransform: "uppercase", transition: "color 0.2s" }}
-                        onMouseOver={e => e.target.style.color = "#fff"}
-                        onMouseOut={e => e.target.style.color = "#2D7EFF"}
-                        onClick={() => {
-                                i18n.changeLanguage(props.lang)
-                                props.setLang(props.lang)
-                            }
-                        }
-                    >
-                        {props.lang}
-                    </button>
-                </nav>
-            </header>
-        </>
-    );
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
+  return (
+    <header>
+      <nav className={`nav${scrolled ? " scrolled" : ""}`}>
+        <button className="brand" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          ET<span>.</span>ai
+        </button>
+        <div className="nav-links">
+          {TABS.map(s => (
+            <button key={s} className="nav-link" onClick={() => scrollTo(s)}>
+              {t(`nav.${s}`)}
+            </button>
+          ))}
+        </div>
+        <button className="lang-btn" onClick={() => i18n.changeLanguage(nextLang)} aria-label={`Switch language to ${nextLang}`}>
+          {nextLang}
+        </button>
+      </nav>
+    </header>
+  );
 }
 
 export default Nav;

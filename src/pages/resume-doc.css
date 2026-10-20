@@ -1,0 +1,85 @@
+@page { size: A4; margin: 0; }
+
+html, body { background: #fff !important; }
+
+.cv {
+  --ink: #0F172A;
+  --ink-2: #334155;
+  --muted: #64748B;
+  --line: #E2E8F0;
+  --accent: #2D7EFF;
+  --dark: #0A0F1E;
+  width: 210mm; height: 297mm; overflow: hidden; margin: 0 auto;
+  background: #fff; color: var(--ink);
+  font-family: 'Inter', sans-serif; font-size: 8.3pt; line-height: 1.4;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  display: flex; flex-direction: column;
+}
+
+/* ── header (mirrors the dark web hero) ── */
+.cv-head {
+  background: var(--dark);
+  background-image:
+    linear-gradient(rgba(45,126,255,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45,126,255,0.07) 1px, transparent 1px),
+    radial-gradient(circle at 85% 30%, rgba(45,126,255,0.28), transparent 55%);
+  background-size: 24px 24px, 24px 24px, 100% 100%;
+  color: #fff;
+  padding: 9mm 13mm 7mm;
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 8mm;
+}
+.cv-head h1 { font-family: 'Space Grotesk', sans-serif; font-size: 27pt; font-weight: 700; letter-spacing: -0.5pt; line-height: 1.05; }
+.cv-head h1 span { color: var(--accent); }
+.cv-title { font-family: 'Space Grotesk', sans-serif; font-size: 12pt; color: #CBD5E1; margin-top: 2mm; }
+.cv-contact { list-style: none; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 7.6pt; color: #CBD5E1; line-height: 1.8; }
+.cv-contact a { color: inherit; text-decoration: none; }
+
+/* ── body ── */
+.cv-body { flex: 1; display: grid; grid-template-columns: 62mm 1fr; }
+.cv-side { background: #F5F8FE; border-right: 1px solid var(--line); padding: 6mm 6mm 6mm 13mm; }
+.cv-main { padding: 6mm 13mm 6mm 7mm; }
+.cv section + section { margin-top: 4.5mm; }
+
+.cv h2 {
+  font-family: 'JetBrains Mono', monospace; font-size: 7.6pt; font-weight: 600;
+  color: var(--accent); letter-spacing: 1.4pt; text-transform: uppercase;
+  padding-bottom: 1.5mm; margin-bottom: 2.2mm; border-bottom: 1.2pt solid var(--accent);
+}
+
+/* sidebar */
+.cv-skill-group + .cv-skill-group { margin-top: 2.4mm; }
+.cv-cat { font-family: 'JetBrains Mono', monospace; font-size: 6.6pt; color: var(--muted); letter-spacing: 0.8pt; text-transform: uppercase; margin-bottom: 1.2mm; }
+.cv-chips { display: flex; flex-wrap: wrap; gap: 1.2mm; }
+.cv-chips span {
+  font-family: 'Space Grotesk', sans-serif; font-size: 7.6pt; color: var(--ink);
+  background: rgba(45,126,255,0.09); border: 0.6pt solid rgba(45,126,255,0.3);
+  border-radius: 1.2mm; padding: 0.3mm 1.6mm;
+}
+.cv-ai { list-style: none; }
+.cv-ai li { position: relative; padding-left: 3mm; font-size: 7.6pt; color: var(--ink-2); line-height: 1.5; }
+.cv-ai li::before { content: ""; position: absolute; left: 0; top: 1.7mm; width: 1.3mm; height: 1.3mm; border-radius: 0.3mm; background: var(--accent); }
+.cv-lang { display: flex; justify-content: space-between; font-size: 8pt; color: var(--ink); line-height: 1.7; }
+.cv-lang b { font-weight: 500; color: var(--muted); }
+
+/* main */
+.cv-profile { color: var(--ink-2); border-left: 1.5pt solid var(--accent); padding-left: 3mm; }
+.cv-item { break-inside: avoid; }
+.cv-item + .cv-item { margin-top: 2.6mm; }
+.cv-item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+.cv-item h3 { font-family: 'Space Grotesk', sans-serif; font-size: 9.8pt; font-weight: 700; color: var(--ink); }
+.cv-period { font-family: 'JetBrains Mono', monospace; font-size: 7pt; color: var(--muted); white-space: nowrap; }
+.cv-period.current { color: var(--accent); font-weight: 600; }
+.cv-org { font-family: 'Space Grotesk', sans-serif; font-size: 8.4pt; color: var(--accent); margin: 0.3mm 0 1mm; }
+.cv-org span { color: var(--muted); }
+.cv-item ul { list-style: none; }
+.cv-item li { position: relative; padding-left: 3.4mm; color: var(--ink-2); }
+.cv-item li + li { margin-top: 0.5mm; }
+.cv-item li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+
+@media screen {
+  body { padding: 24px 0; background: #E5E7EB !important; }
+  .cv { box-shadow: 0 8px 40px rgba(0,0,0,0.15); }
+}
+@media print {
+  body { padding: 0; }
+}

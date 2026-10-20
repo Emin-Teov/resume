@@ -1,69 +1,164 @@
 {
   "nav": {
-    "skills": "Bacarıqlar", "experience": "Təcrübə", "projects": "Layihələr", "contact": "Əlaqə"
+    "about": "Profil",
+    "skills": "Bacarıqlar",
+    "experience": "Təcrübə",
+    "education": "Təhsil",
+    "contact": "Əlaqə"
   },
 
   "full_name": "Emin Təvəkkülov",
   "name": "Emin",
   "surname": "Təvəkkülov",
+  "title": "AI Mühəndisi | Proqram Təminatı Developeri",
   "location": "Bakı, Azərbaycan",
-  "research": "PhD @ ADNSU — İnformasiya ölçmə sistemləri",
   "opportunities": "Təkliflərə açıq →",
+  "now": "İndi",
 
-  "technical_skills": "Texniki bacarıqlar",
-  "build_with": "İstifadə etdiyim alətlər",
+  "hero": {
+    "tagline": "Möhkəm full-stack və backend təcrübəsi üzərində LLM əsaslı tətbiqlər qururam.",
+    "cta_contact": "Əlaqə saxla",
+    "cta_experience": "Təcrübəyə bax",
+    "cta_cv": "CV-ni yüklə",
+    "now_label": "Hal-hazırda",
+    "since": "Okt 2026-dan",
+    "facts": [
+      { "label": "Ünvan",    "value": "Bakı, Azərbaycan" },
+      { "label": "Tədqiqat", "value": "PhD @ ADNSU · 2025 — 2028" },
+      { "label": "Fokus",    "value": "LLM · RAG · AI agentlər" },
+      { "label": "Dillər",   "value": "AZ · EN · RU" }
+    ]
+  },
 
-  "experience_education": "Təcrübə və təhsil",
-  "experience": [
-    {
-      "period":  "Okt 2025 — Davam edir",
-      "role":    "Doktorant Dərəcəsi",
-      "company": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
-      "detail":  "İnformasiya Ölçmə və İdarəetmə Sistemləri. İnformasiya Texnologiyaları və İdarəetmə Fakültəsi.",
-      "type":    "edu"
-    },
-    {
-      "period":  "Davam edir",
-      "role":    "Freelance Full-Stack Developer",
-      "company": "Müstəqil",
-      "detail":  "Müxtəlif müəssisələr üçün React, Vue, Node.js, Flutter, WordPress və Laravel layihələrin hazırlanması.",
-      "type":    "work"
-    },
-    {
-      "period":  "Apr 2021 — Sen 2022",
-      "role":    "Back-End Developer",
-      "company": "FANFI LLC — Bakı, Azərbaycan",
-      "detail":  "Xüsusi PHP/Java/Python modulları ilə CMS əsaslı backend sistemləri (Joomla, WordPress) qurulmuş və inkişaf etdirilmişdir. Jira vasitəsilə izlənilən Agile sprintlərində xüsusiyyətlər təqdim edilmişdir.",
-      "type":    "work"
-    },
-    {
-      "period":  "İyn 2019 — Sen 2019",
-      "role":    "IT Intern",
-      "company": "Azərbaycan Respublikası Mərkəzi Bankı",
-      "detail":  "I have technical and programming experience in the IT department, on Payment Systems and Finance.",
-      "type":    "work"
-    },
-    {
-      "period":  "Sen 2017 — İyn 2019",
-      "role":    "Magistr Dərəcəsi — Biotibbi Texnika Mühəndisliyi",
-      "company": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
-      "detail":  "Fərqlənmə diplomu ilə məzun. İnformasiya Texnologiyaları və İdarəetmə Fakültəsi.",
-      "type":    "edu"
-    },
-    {
-      "period":  "Sen 2013 — Jul 2017",
-      "role":    "Bakalavr Dərəcəsi — Biotibbi Texnologiyalar Mühəndisliyi",
-      "company": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
-      "detail":  "İnformasiya Texnologiyaları və İdarəetmə Fakültəsi.",
-      "type":    "edu"
-    }
-  ],
+  "about": {
+    "label": "Peşəkar profil",
+    "title": "Full-stack-dən AI mühəndisliyinə",
+    "text": "Praktiki full-stack və backend təcrübəsinə malik proqram mühəndisi, hazırda AI mühəndisliyi, maşın öyrənməsi, generativ AI və LLM əsaslı tətbiqlər üzərində fokuslanır. Biliklərə tokenizasiya, embedding-lər, vektor verilənlər bazaları, RAG, semantik axtarış, LLM API-ləri, prompt mühəndisliyi, AI agentləri, function calling, fine-tuning, qiymətləndirmə, təhlükəsizlik və production-a yerləşdirmə daxildir. İnformasiya-ölçmə və idarəetmə sistemləri üzrə PhD tədqiqatçısı, AI-ın real biznes problemlərinə tətbiqi ilə maraqlanır."
+  },
 
-  "talk": "Gəlin danışaq",
-  "right_role": "Doğru rollara açıq",
-  "offer": "Full-stack, backend və ya mobil — remote və ya local. Əgər iş maraqlıdırsa, gəlin uyğun olub-olmadığımızı görək.",
-  "label_location": "Ünvan",
-  "label_languages": "Dillər",
-  "label_status": "Status"
+  "skills": {
+    "label": "Bacarıqlar",
+    "title": "İstifadə etdiyim alətlər",
+    "technical": "Texniki bacarıqlar",
+    "ai": "AI mühəndisliyi və LLM",
+    "groups": [
+      { "cat": "Dillər",           "items": ["Python", "JavaScript", "PHP", "Java", "C/C++"] },
+      { "cat": "Verilənlər bazası", "items": ["PL/SQL", "SQL / MySQL", "PostgreSQL", "SQLite"] },
+      { "cat": "Freymvorklar",     "items": ["Node.js", "React", "React Native", "Flutter", "Vue", "Laravel", "Spring"] },
+      { "cat": "Veb və alətlər",   "items": ["REST API", "Git / Jira", "HTML5 / CSS3 / Bootstrap"] }
+    ],
+    "ai_items": [
+      "AI və maşın öyrənməsinin əsasları",
+      "Generativ AI və LLM-lər",
+      "Tokenizasiya və embedding-lər",
+      "Prompt mühəndisliyi",
+      "RAG və semantik axtarış",
+      "Vektor verilənlər bazaları",
+      "LLM API-ləri",
+      "Python AI tətbiqləri",
+      "AI agentləri və agentik iş axınları",
+      "Function calling və alət istifadəsi",
+      "Fine-tuning və modelin fərdiləşdirilməsi",
+      "LLM qiymətləndirməsi və performans",
+      "AI təhlükəsizliyi, məxfilik və Məsuliyyətli AI",
+      "Yerləşdirmə və production",
+      "Biznes yönümlü AI həlləri"
+    ]
+  },
 
+  "experience": {
+    "label": "İş təcrübəsi",
+    "title": "Harada çalışmışam",
+    "items": [
+      {
+        "period":  "Okt 2026 — Hal-hazırda",
+        "role":    "PHP Developer",
+        "company": "Devirlon Technology",
+        "place":   "Bakı, Azərbaycan",
+        "current": true,
+        "bullets": []
+      },
+      {
+        "period":  "2024 — 2026",
+        "role":    "Full-Stack Developer",
+        "company": "ALFA INVENTION",
+        "place":   "Uzaqdan",
+        "bullets": [
+          "İş axtarışı və tibbi dəstək startapları üçün React, Flutter, Node.js və PostgreSQL ilə veb və mobil tətbiqlər hazırlamışam.",
+          "Autentifikasiya, profil idarəetməsi və sosial şəbəkə funksiyaları olan REST API-lər yaratmışam.",
+          "Təxminən 300 test istifadəçisi üçün hazırlanmış mühitdə backend xidmətlərini Render üzərində yerləşdirib test etmişəm.",
+          "Praktiki proqram həlləri təqdim etmək üçün müxtəlif proqramlaşdırma dilləri, freymvorklar və verilənlər bazaları ilə işləmişəm."
+        ]
+      },
+      {
+        "period":  "Apr 2021 — Sen 2022",
+        "role":    "Back-end Developer",
+        "company": "FANFI.MMC",
+        "place":   "Bakı, Azərbaycan",
+        "bullets": [
+          "Bir neçə proqramlaşdırma dili və CMS texnologiyalarından istifadə edərək backend proqram təminatı hazırlamışam."
+        ]
+      },
+      {
+        "period":  "İyn 2019 — Sen 2019",
+        "role":    "IT Təcrübəçi",
+        "company": "Azərbaycan Respublikası Mərkəzi Bankı",
+        "place":   "Bakı, Azərbaycan",
+        "bullets": [
+          "IT departamentində praktiki proqramlaşdırma təcrübəsi qazanmış, bir neçə proqramlaşdırma dili və freymvorkla işləmişəm."
+        ]
+      }
+    ]
+  },
+
+  "education": {
+    "label": "Təhsil",
+    "title": "Akademik keçmiş",
+    "school": "Azərbaycan Dövlət Neft və Sənaye Universiteti",
+    "items": [
+      {
+        "period":  "Okt 2025 — Hal-hazırda",
+        "degree":  "Fəlsəfə doktoru (PhD)",
+        "current": true,
+        "bullets": [
+          "İnformasiya Texnologiyaları və İdarəetmə fakültəsi",
+          "İxtisas: İnformasiya-ölçmə və idarəetmə sistemləri (sahələr üzrə)",
+          "Gözlənilən məzuniyyət: 2028"
+        ]
+      },
+      {
+        "period":  "Sen 2017 — İyn 2019",
+        "degree":  "Magistr dərəcəsi (fərqlənmə diplomu)",
+        "bullets": [
+          "İnformasiya Texnologiyaları və İdarəetmə fakültəsi",
+          "İxtisas: Biotibbi texnika mühəndisliyi",
+          "Fərqlənmə diplomu ilə məzun (2019)"
+        ]
+      },
+      {
+        "period":  "Sen 2013 — İyl 2017",
+        "degree":  "Bakalavr dərəcəsi",
+        "bullets": [
+          "İnformasiya Texnologiyaları və İdarəetmə fakültəsi",
+          "İxtisas: Biotibbi texnika mühəndisliyi"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+    "label": "Əlaqə",
+    "title": "Gəlin AI ilə nəsə quraq",
+    "offer": "AI mühəndisliyi, LLM tətbiqləri, full-stack və ya backend — uzaqdan və ya Bakıda. Problem maraqlıdırsa, danışaq.",
+    "address_label": "Ünvan",
+    "address": "Akim Abbasov 1c, Bakı, Azərbaycan",
+    "phone_label": "Telefon",
+    "email_label": "E-poçt",
+    "languages_label": "Dillər",
+    "languages": [
+      { "name": "Azərbaycan", "level": "Ana dili" },
+      { "name": "İngilis",    "level": "Yüksək" },
+      { "name": "Rus",        "level": "Başlanğıc" }
+    ]
+  }
 }

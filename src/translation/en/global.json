@@ -1,68 +1,164 @@
 {
   "nav": {
-    "skills": "Skills", "experience": "Experience", "projects": "Projects", "contact": "Contact"
+    "about": "Profile",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
   },
 
   "full_name": "Emin Tavakkulov",
   "name": "Emin",
   "surname": "Tavakkulov",
+  "title": "AI Engineer | Software Developer",
   "location": "Baku, Azerbaijan",
-  "research": "PhD @ ASOIU — Information measurement systems",
   "opportunities": "Open to opportunities →",
+  "now": "Now",
 
-  "technical_skills": "Technical skills",
-  "build_with": "What I build with",
+  "hero": {
+    "tagline": "Building LLM-powered applications on top of solid full-stack and backend engineering.",
+    "cta_contact": "Get in touch",
+    "cta_experience": "View experience",
+    "cta_cv": "Download CV",
+    "now_label": "Currently",
+    "since": "Since Oct 2026",
+    "facts": [
+      { "label": "Location",  "value": "Baku, Azerbaijan" },
+      { "label": "Research",  "value": "PhD @ ASOIU · 2025 — 2028" },
+      { "label": "Focus",     "value": "LLMs · RAG · AI agents" },
+      { "label": "Languages", "value": "AZ · EN · RU" }
+    ]
+  },
 
-  "experience_education": "Experience & education",
-  "experience": [
-    {
-      "period":  "Oct 2025 — Present",
-      "role":    "PhD Researcher",
-      "company": "Azerbaijan State Oil & Industry University",
-      "detail":  "Information-Measurement & Management Systems. Faculty of Information Technology and Management.",
-      "type":    "edu"
-    },
-    {
-      "period":  "Ongoing",
-      "role":    "Freelance Full-Stack Developer",
-      "company": "Independent",
-      "detail":  "End-to-end delivery across React, Vue, Node.js, Flutter, WordPress and Laravel projects for clients across varied industries.",
-      "type":    "work"
-    },
-    {
-      "period":  "Apr 2021 — Sep 2022",
-      "role":    "Back-End Developer",
-      "company": "FANFI LLC — Baku, Azerbaijan",
-      "detail":  "Built and maintained CMS-based backend systems (Joomla, WordPress) with custom PHP/Java/Python modules. Delivered features in Agile sprints tracked via Jira.",
-      "type":    "work"
-    },
-    {
-      "period":  "Jun 2019 — Sep 2019",
-      "role":    "IT Intern",
-      "company": "Central Bank of the Republic of Azerbaijan",
-      "detail":  "Rotated through the IT department, building internal tooling and gaining production exposure in a regulated financial environment.",
-      "type":    "work"
-    },
-    {
-      "period":  "Sep 2017 — Jun 2019",
-      "role":    "Master's Degree — Biomedical Technology Engineering",
-      "company": "Azerbaijan State Oil & Industry University",
-      "detail":  "Graduated with Honours. Faculty of Information Technology and Management.",
-      "type":    "edu"
-    },
-    {
-      "period":  "Sep 2013 — Jul 2017",
-      "role":    "Bachelor's Degree — Biomedical Technology Engineering",
-      "company": "Azerbaijan State Oil & Industry University",
-      "detail":  "Faculty of Information Technology and Management.",
-      "type":    "edu"
-    }
-  ],
+  "about": {
+    "label": "Professional profile",
+    "title": "From full-stack to AI engineering",
+    "text": "Software Engineer with practical full-stack and backend experience, now focused on AI Engineering, Machine Learning, Generative AI and LLM-based applications. Knowledge includes tokenization, embeddings, vector databases, RAG, semantic search, LLM APIs, prompt engineering, AI agents, function calling, fine-tuning, evaluation, security and production deployment. PhD researcher in Information-measurement and management systems, interested in applying AI to real business problems."
+  },
 
-  "talk": "Let's talk",
-  "right_role": "Open to the right role",
-  "offer": "Full-stack, backend, or mobile — remote or Baku-based. If the work is interesting, let's find out if we're a fit.",
-  "label_location": "Location",
-  "label_languages": "Languages",
-  "label_status": "Status"
+  "skills": {
+    "label": "Skills",
+    "title": "What I build with",
+    "technical": "Technical skills",
+    "ai": "AI engineering & LLM",
+    "groups": [
+      { "cat": "Languages",   "items": ["Python", "JavaScript", "PHP", "Java", "C/C++"] },
+      { "cat": "Databases",   "items": ["PL/SQL", "SQL / MySQL", "PostgreSQL", "SQLite"] },
+      { "cat": "Frameworks",  "items": ["Node.js", "React", "React Native", "Flutter", "Vue", "Laravel", "Spring"] },
+      { "cat": "Web & tools", "items": ["REST API", "Git / Jira", "HTML5 / CSS3 / Bootstrap"] }
+    ],
+    "ai_items": [
+      "AI & Machine Learning fundamentals",
+      "Generative AI & LLMs",
+      "Tokenization & embeddings",
+      "Prompt engineering",
+      "RAG & semantic search",
+      "Vector databases",
+      "LLM APIs",
+      "Python AI applications",
+      "AI agents & agentic workflows",
+      "Function calling & tool use",
+      "Fine-tuning & model customization",
+      "LLM evaluation & performance",
+      "AI security, privacy & Responsible AI",
+      "Deployment & production",
+      "Business-focused AI solutions"
+    ]
+  },
+
+  "experience": {
+    "label": "Work experience",
+    "title": "Where I've worked",
+    "items": [
+      {
+        "period":  "Oct 2026 — Present",
+        "role":    "PHP Developer",
+        "company": "Devirlon Technology",
+        "place":   "Baku, Azerbaijan",
+        "current": true,
+        "bullets": []
+      },
+      {
+        "period":  "2024 — 2026",
+        "role":    "Full-Stack Developer",
+        "company": "ALFA INVENTION",
+        "place":   "Remote",
+        "bullets": [
+          "Built web and mobile applications with React, Flutter, Node.js and PostgreSQL for job-search and medical-support startups.",
+          "Developed REST APIs with authentication, profile management and social-network features.",
+          "Deployed and tested backend services on Render for an environment prepared for approximately 300 test users.",
+          "Worked across programming languages, frameworks and databases to deliver practical software solutions."
+        ]
+      },
+      {
+        "period":  "Apr 2021 — Sep 2022",
+        "role":    "Back-end Developer",
+        "company": "FANFI.MMC",
+        "place":   "Baku, Azerbaijan",
+        "bullets": [
+          "Developed backend software using several programming languages and CMS technologies."
+        ]
+      },
+      {
+        "period":  "Jun 2019 — Sep 2019",
+        "role":    "IT Intern",
+        "company": "Central Bank of the Republic of Azerbaijan",
+        "place":   "Baku, Azerbaijan",
+        "bullets": [
+          "Gained practical programming experience in the IT department and worked with several programming languages and frameworks."
+        ]
+      }
+    ]
+  },
+
+  "education": {
+    "label": "Education",
+    "title": "Academic background",
+    "school": "Azerbaijan State Oil and Industry University",
+    "items": [
+      {
+        "period":  "Oct 2025 — Present",
+        "degree":  "PhD Degree",
+        "current": true,
+        "bullets": [
+          "Faculty of Information Technology and Management",
+          "Specialty: Information-measurement and management systems (by sector)",
+          "Expected graduation: 2028"
+        ]
+      },
+      {
+        "period":  "Sep 2017 — Jun 2019",
+        "degree":  "Master Degree (Graduated with Honours)",
+        "bullets": [
+          "Faculty of Information Technology and Management",
+          "Specialty: Biomedical Technology Engineering",
+          "Graduated with Honours (2019)"
+        ]
+      },
+      {
+        "period":  "Sep 2013 — Jul 2017",
+        "degree":  "Bachelor Degree",
+        "bullets": [
+          "Faculty of Information Technology and Management",
+          "Specialty: Biomedical Technology Engineering"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+    "label": "Contact",
+    "title": "Let's build something with AI",
+    "offer": "AI engineering, LLM applications, full-stack or backend — remote or Baku-based. If the problem is interesting, let's talk.",
+    "address_label": "Address",
+    "address": "Akim Abbasov 1c, Baku, Azerbaijan",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "languages_label": "Languages",
+    "languages": [
+      { "name": "Azerbaijani", "level": "Native" },
+      { "name": "English",     "level": "Advanced" },
+      { "name": "Russian",     "level": "Basic" }
+    ]
+  }
 }

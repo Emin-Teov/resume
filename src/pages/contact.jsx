@@ -1,88 +1,48 @@
-import { useTranslation } from 'react-i18next'
-
+import { useTranslation } from 'react-i18next';
 import Reveal from './reveal';
 
-function Contact(props) {
-  const { t, i18n } = useTranslation();
+function Contact({ EMAIL, PHONE }) {
+  const { t } = useTranslation();
+  const languages = t('contact.languages', { returnObjects: true });
+
   return (
-    <>
-        <section id="contact" style={{
-            padding: "100px 5vw 80px",
-            borderTop: "1px solid rgba(45,126,255,0.08)",
-            display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center",
-        }}>
-        <Reveal>
-            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "#2D7EFF", letterSpacing: 2, textTransform: "uppercase", marginBottom: 12 }}>
-                {t('talk')}
-            </p>
-            <h2 style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: "clamp(28px, 5vw, 56px)",
-            fontWeight: 700, color: "#fff",
-            margin: "0 0 16px", letterSpacing: "-1px",
-            maxWidth: 600,
-            }}>
-                {t('right_role')}
-            </h2>
-            <p style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 17, color: "#8B9AB5", lineHeight: 1.7,
-            margin: "0 0 48px", maxWidth: 480,
-            }}>
-                {t('offer')}
-            </p>
+    <section id="contact" className="section contact">
+      <Reveal>
+        <p className="eyebrow">{t('contact.label')}</p>
+        <h2 className="section-title">{t('contact.title')}</h2>
+        <p className="contact-offer">{t('contact.offer')}</p>
 
-            <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center", marginBottom: 64 }}>
-            <a href="mailto:e1000.tavakkulov@gmail.com" style={{
-                display: "inline-flex", alignItems: "center", gap: 10,
-                background: "#2D7EFF", color: "#fff",
-                padding: "16px 36px", borderRadius: 8,
-                fontFamily: "'Space Grotesk', sans-serif", fontSize: 15, fontWeight: 600,
-                textDecoration: "none", letterSpacing: 0.3,
-                transition: "background 0.2s, transform 0.15s",
-            }}
-                onMouseOver={e => { e.currentTarget.style.background = "#1a65d6"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-                onMouseOut={e => { e.currentTarget.style.background = "#2D7EFF"; e.currentTarget.style.transform = "translateY(0)"; }}
-            >
-                {props.EMAIL}
-            </a>
-            <a href="tel:+994775975319" style={{
-                display: "inline-flex", alignItems: "center",
-                background: "transparent", color: "#8B9AB5",
-                border: "1px solid rgba(139,154,181,0.3)",
-                padding: "16px 36px", borderRadius: 8,
-                fontFamily: "'Space Grotesk', sans-serif", fontSize: 15, fontWeight: 500,
-                textDecoration: "none",
-                transition: "color 0.2s, border-color 0.2s",
-            }}
-                onMouseOver={e => { e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.4)"; }}
-                onMouseOut={e => { e.currentTarget.style.color = "#8B9AB5"; e.currentTarget.style.borderColor = "rgba(139,154,181,0.3)"; }}
-            >
-                {props.PHONE}
-            </a>
-            </div>
-
-            <div style={{ display: "flex", gap: 40, justifyContent: "center", flexWrap: "wrap" }}>
-            {[
-                { label: t('label_location'), value: t('location') },
-                { label: t('label_languages'), value: "AZ · EN · RU" },
-                { label: t('label_status'), value: t('research') },
-            ].map(({ label, value }) => (
-                <div key={label}>
-                <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#4A5568", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>{label}</p>
-                <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 14, color: "#8B9AB5", margin: 0 }}>{value}</p>
-                </div>
-            ))}
-            </div>
-        </Reveal>
-
-        <div style={{ marginTop: 80, paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.06)", width: "100%", maxWidth: 600 }}>
-            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#2A3448", margin: 0 }}>
-            © 2026 {t('full_name')}
-            </p>
+        <div className="btn-row">
+          <a className="btn btn-primary" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+          <a className="btn btn-ghost" href={`tel:${PHONE.replace(/\s/g, "")}`}>{PHONE}</a>
         </div>
-        </section>
-    </>
+      </Reveal>
+
+      <Reveal delay={100} className="contact-grid">
+        <div>
+          <p className="contact-label">{t('contact.address_label')}</p>
+          <p className="contact-value">{t('contact.address')}</p>
+        </div>
+        <div>
+          <p className="contact-label">{t('contact.phone_label')}</p>
+          <a className="contact-value" href={`tel:${PHONE.replace(/\s/g, "")}`}>{PHONE}</a>
+        </div>
+        <div>
+          <p className="contact-label">{t('contact.email_label')}</p>
+          <a className="contact-value" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+        </div>
+        <div>
+          <p className="contact-label">{t('contact.languages_label')}</p>
+          {languages.map(l => (
+            <p key={l.name} className="contact-value lang-row">
+              {l.name} <b>{l.level}</b>
+            </p>
+          ))}
+        </div>
+      </Reveal>
+
+      <p className="footer">© 2026 {t('full_name')}</p>
+    </section>
   );
 }
 
