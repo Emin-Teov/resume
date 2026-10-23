@@ -96,13 +96,7 @@
   padding: 32px; backdrop-filter: blur(8px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.35);
 }
-.now-label { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
-.pulse { width: 8px; height: 8px; border-radius: 50%; background: #28C840; box-shadow: 0 0 0 0 rgba(40,200,64,0.6); animation: pulse 2s infinite; }
-@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(40,200,64,0); } 100% { box-shadow: 0 0 0 0 rgba(40,200,64,0); } }
-.now-role { font-family: var(--display); font-size: 26px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
-.now-company { font-family: var(--display); font-size: 16px; color: var(--accent); margin-top: 4px; }
-.now-since { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 1px; margin-top: 10px; }
-.facts { margin-top: 26px; border-top: 1px solid var(--border); }
+.now-label { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
 .facts div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); }
 .facts div:last-child { border-bottom: none; padding-bottom: 0; }
 .facts dt { font-family: var(--mono); font-size: 10px; color: var(--faint); letter-spacing: 1.5px; text-transform: uppercase; padding-top: 3px; }
@@ -120,7 +114,7 @@
   background: rgba(255,255,255,0.04); border: 1px solid rgba(45,126,255,0.2); border-radius: 12px;
   padding: 24px 28px; max-width: 640px; backdrop-filter: blur(8px);
 }
-.terminal-bar { display: flex; align-items: center; gap: 7px; margin-bottom: 18px; }
+.terminal-bar { display: flex; align-items: center; gap: 7px; margin-bottom: 6px; }
 .terminal-bar i { width: 12px; height: 12px; border-radius: 50%; }
 .terminal-bar span { font-family: var(--mono); font-size: 11px; color: var(--faint); margin-left: 8px; }
 .terminal-body { font-family: var(--mono); font-size: clamp(11px, 1.5vw, 13.5px); line-height: 2; min-height: 10em; white-space: pre-wrap; overflow-wrap: anywhere; }
@@ -219,7 +213,6 @@ a.contact-value:hover { color: var(--accent); }
   .terminal-body { font-size: 11px; white-space: pre; overflow-x: auto; overflow-wrap: normal; min-height: 0; scrollbar-width: none;
     -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
   .now-card { padding: 24px; }
-  .now-role { font-size: 22px; }
   .tl-item { gap: 18px; }
   .skill-cat { min-width: 100%; padding-top: 0; }
   .btn { flex: 1 1 auto; }

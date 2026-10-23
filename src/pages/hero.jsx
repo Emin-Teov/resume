@@ -39,17 +39,13 @@ function useTypewriter(lines, speed = 38, pauseBetween = 600) {
   return { displayed, cursor };
 }
 
-function NowCard() {
+function GlanceCard() {
   const { t } = useTranslation();
-  const job = t('experience.items', { returnObjects: true })[0];
   const facts = t('hero.facts', { returnObjects: true });
 
   return (
     <aside className="now-card">
-      <p className="now-label"><span className="pulse" />{t('hero.now_label')}</p>
-      <p className="now-role">{job.role}</p>
-      <p className="now-company">{job.company}</p>
-      <p className="now-since">{t('hero.since')}</p>
+      <p className="now-label">{t('hero.glance_label')}</p>
       <dl className="facts">
         {facts.map(f => (
           <div key={f.label}>
@@ -112,7 +108,7 @@ function Hero({ STACK_LINES }) {
             </a>
           </div>
         </div>
-        <NowCard />
+        <GlanceCard />
       </div>
     </section>
   );

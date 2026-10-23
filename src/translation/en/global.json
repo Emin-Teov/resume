@@ -20,12 +20,12 @@
     "cta_contact": "Get in touch",
     "cta_experience": "View experience",
     "cta_cv": "Download CV",
-    "now_label": "Currently",
-    "since": "Since Oct 2026",
+    "glance_label": "At a glance",
     "facts": [
       { "label": "Location",  "value": "Baku, Azerbaijan" },
       { "label": "Research",  "value": "PhD @ ASOIU · 2025 — 2028" },
       { "label": "Focus",     "value": "LLMs · RAG · AI agents" },
+      { "label": "Stack",     "value": "Python · PHP · React · Node.js" },
       { "label": "Languages", "value": "AZ · EN · RU" }
     ]
   },
@@ -70,14 +70,6 @@
     "label": "Work experience",
     "title": "Where I've worked",
     "items": [
-      {
-        "period":  "Oct 2026 — Present",
-        "role":    "PHP Developer",
-        "company": "Devirlon Technology",
-        "place":   "Baku, Azerbaijan",
-        "current": true,
-        "bullets": []
-      },
       {
         "period":  "2024 — 2026",
         "role":    "Full-Stack Developer",

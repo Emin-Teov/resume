@@ -13,9 +13,9 @@ const TABS = ["about", "skills", "experience", "education", "contact"];
 const STACK_LINES = [
   "const engineer = 'Emin Tavakkulov';",
   "const role     = 'AI Engineer | Software Developer';",
-  "const current  = 'PHP Developer @ Devirlon';",
   "const ai       = ['LLMs','RAG','AI Agents','Vector DBs'];",
-  "const stack    = ['PHP','Python','React','Node.js'];",
+  "const stack    = ['Python','PHP','React','Node.js'];",
+  "const research = 'PhD @ ASOIU — Info-measurement systems';",
 ];
 
 function App() {
@@ -33,3 +33,7 @@ function App() {
 }
 
 export default App;
+
+/**
+ git a
+ */

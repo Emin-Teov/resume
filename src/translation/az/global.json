@@ -20,12 +20,12 @@
     "cta_contact": "Əlaqə saxla",
     "cta_experience": "Təcrübəyə bax",
     "cta_cv": "CV-ni yüklə",
-    "now_label": "Hal-hazırda",
-    "since": "Okt 2026-dan",
+    "glance_label": "Qısa məlumat",
     "facts": [
       { "label": "Ünvan",    "value": "Bakı, Azərbaycan" },
       { "label": "Tədqiqat", "value": "PhD @ ADNSU · 2025 — 2028" },
       { "label": "Fokus",    "value": "LLM · RAG · AI agentlər" },
+      { "label": "Stek",     "value": "Python · PHP · React · Node.js" },
       { "label": "Dillər",   "value": "AZ · EN · RU" }
     ]
   },
@@ -70,14 +70,6 @@
     "label": "İş təcrübəsi",
     "title": "Harada çalışmışam",
     "items": [
-      {
-        "period":  "Okt 2026 — Hal-hazırda",
-        "role":    "PHP Developer",
-        "company": "Devirlon Technology",
-        "place":   "Bakı, Azərbaycan",
-        "current": true,
-        "bullets": []
-      },
       {
         "period":  "2024 — 2026",
         "role":    "Full-Stack Developer",
