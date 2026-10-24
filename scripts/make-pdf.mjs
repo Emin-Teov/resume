@@ -1,12 +1,17 @@
-// Generates public/Emin_Tavakkulov_CV_EN.pdf and _AZ.pdf from the /?print=<lang> page.
+// Generates the resume PDFs from the /?print=<lang>[&variant=<name>] page.
+// The public/ ones are linked from the website; tailored ones go to resumes/ and are not deployed.
 // Usage: npm run pdf   (set CHROME_PATH if Chrome/Edge is installed somewhere unusual)
 import { spawn } from 'node:child_process';
-import { existsSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { build, preview } from 'vite';
 
-const LANGS = ['en', 'az'];
+const JOBS = [
+  { query: 'print=en',            out: 'public/Emin_Tavakkulov_CV_EN.pdf' },
+  { query: 'print=az',            out: 'public/Emin_Tavakkulov_CV_AZ.pdf' },
+  { query: 'print=en&variant=bp', out: 'resumes/Emin_Tavakkulov_CV_EN_bp.pdf' },
+];
 const PORT = 4179;
 const DEBUG_PORT = 9333;
 
@@ -48,8 +53,8 @@ try {
     ws.send(JSON.stringify({ id, method, params }));
   });
 
-  for (const lang of LANGS) {
-    await send('Page.navigate', { url: `http://localhost:${PORT}/?print=${lang}` });
+  for (const { query, out } of JOBS) {
+    await send('Page.navigate', { url: `http://localhost:${PORT}/?${query}` });
     // wait until the resume is rendered and web fonts are loaded
     for (let i = 0; i < 100; i++) {
       const { result } = await send('Runtime.evaluate', {
@@ -61,7 +66,7 @@ try {
     }
     await sleep(300);
     const { data } = await send('Page.printToPDF', { printBackground: true, preferCSSPageSize: true });
-    const out = `public/Emin_Tavakkulov_CV_${lang.toUpperCase()}.pdf`;
+    mkdirSync(dirname(out), { recursive: true });
     writeFileSync(out, Buffer.from(data, 'base64'));
     console.log('wrote', out);
   }

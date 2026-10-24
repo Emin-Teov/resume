@@ -1,0 +1,62 @@
+{
+  "title": "Software Engineer | Backend & APIs",
+
+  "about": {
+    "text": "Software Engineer with hands-on backend and full-stack experience developing, testing and deploying REST APIs and services in Python, Java, PHP and Node.js, with relational data modelling in PostgreSQL, MySQL and PL/SQL. Comfortable picking up new languages and stacks quickly, having delivered production work across several. Deployed and tested backend services for an environment of approximately 300 users. PhD researcher in Information-measurement and management systems, with a strong interest in metrics, measurement and system reliability. Motivated to grow into platform engineering, Kubernetes, SRE practices and observability, on a team that improves developer productivity at scale."
+  },
+
+  "skills": {
+    "groups": [
+      { "cat": "Languages",         "items": ["Python", "Java", "JavaScript", "PHP", "C/C++"] },
+      { "cat": "Backend & APIs",    "items": ["REST API", "Node.js", "Spring", "Laravel"] },
+      { "cat": "Data modelling",    "items": ["PostgreSQL", "SQL / MySQL", "PL/SQL", "SQLite"] },
+      { "cat": "Delivery & tools",  "items": ["Git", "Jira", "Agile", "Render"] },
+      { "cat": "Frontend & mobile", "items": ["React", "React Native", "Flutter", "Vue"] }
+    ],
+    "ai": "AI & emerging tech",
+    "ai_items": [
+      "LLM APIs & function calling",
+      "AI agents & workflow automation",
+      "RAG & vector databases",
+      "Python AI applications",
+      "Security, privacy & Responsible AI",
+      "Deployment & production"
+    ]
+  },
+
+  "experience": {
+    "items": [
+      {
+        "period":  "2024 — 2026",
+        "role":    "Full-Stack Developer",
+        "company": "ALFA INVENTION",
+        "place":   "Remote",
+        "bullets": [
+          "Developed REST APIs in Node.js with authentication, profile management and social-network features, backed by PostgreSQL.",
+          "Deployed and tested backend services on Render, preparing the environment for approximately 300 test users.",
+          "Built web and mobile clients (React, Flutter) on top of these APIs for job-search and medical-support startups.",
+          "Worked across multiple languages, frameworks and databases, picking up new stacks as projects required."
+        ]
+      },
+      {
+        "period":  "Apr 2021 — Sep 2022",
+        "role":    "Back-end Developer",
+        "company": "FANFI.MMC",
+        "place":   "Baku, Azerbaijan",
+        "bullets": [
+          "Developed backend modules in PHP, Java and Python on CMS platforms (Joomla, WordPress).",
+          "Delivered features in Agile sprints tracked in Jira."
+        ]
+      },
+      {
+        "period":  "Jun 2019 — Sep 2019",
+        "role":    "IT Intern",
+        "company": "Central Bank of the Republic of Azerbaijan",
+        "place":   "Baku, Azerbaijan",
+        "bullets": [
+          "Gained practical programming experience in the IT department of a regulated financial institution, working with several programming languages and frameworks."
+        ]
+      }
+    ]
+  }
+}
